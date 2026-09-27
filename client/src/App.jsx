@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/Dashboard/Dashboard';
 import {
   createTask,
   deleteTask,

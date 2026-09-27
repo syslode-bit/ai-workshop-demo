@@ -1,7 +1,8 @@
-import Navbar from '../components/Navbar';
-import TaskForm from '../components/TaskForm';
-import FilterBar from '../components/FilterBar';
-import TaskList from '../components/TaskList';
+import './Dashboard.css';
+import Navbar from '../../components/Navbar/Navbar';
+import TaskForm from '../../components/TaskForm/TaskForm';
+import FilterBar from '../../components/FilterBar/FilterBar';
+import TaskList from '../../components/TaskList/TaskList';
 
 export default function Dashboard({
   tasks,
@@ -17,7 +18,7 @@ export default function Dashboard({
   loading
 }) {
   return (
-    <div style={styles.page}>
+    <div className="dashboard-page">
       <Navbar />
 
       <TaskForm
@@ -31,26 +32,10 @@ export default function Dashboard({
       <FilterBar filter={filter} onChange={onFilterChange} />
 
       {loading ? (
-        <div style={styles.loadingBox}>Loading tasks...</div>
+        <div className="dashboard-page__loading-box">Loading tasks...</div>
       ) : (
         <TaskList tasks={tasks} onComplete={onComplete} onDelete={onDelete} />
       )}
     </div>
   );
 }
-
-const styles = {
-  page: {
-    maxWidth: '980px',
-    margin: '0 auto',
-    padding: '1.25rem'
-  },
-  loadingBox: {
-    background: '#ffffff',
-    borderRadius: '16px',
-    border: '1px solid #e5e7eb',
-    padding: '1rem 1.25rem',
-    color: '#475569',
-    fontWeight: 600
-  }
-};

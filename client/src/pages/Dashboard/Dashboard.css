@@ -1,0 +1,14 @@
+.dashboard-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.dashboard-page__loading-box {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 1rem 1.25rem;
+  color: #475569;
+  font-weight: 600;
+}
