@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+  color: #111827;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
